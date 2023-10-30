@@ -1,0 +1,184 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700&family=Heebo:wght@700&family=Oswald:wght@700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="css/Home.css">
+   <style>
+   body{
+   margin:0;
+   }
+   #heading{
+   
+   font-family: 'Gabarito', sans-serif;
+font-family: 'Heebo', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-size:50px;
+background-image:url("image/Products/flag.jpg");
+background-size:cover;
+background-clip:text;
+-webkit-background-clip:text;
+background-position:center;
+background-repeat:no-repeat;
+color: rgba(0, 0, 0, 0.0);
+font-weight:bold;
+   }
+   #navvv{
+       box-shadow:2px 2px 2px 2px gray;
+   }
+   .search{
+   width:300px;
+   }
+   #search-input{
+   border-raidus:50%;
+   width:250px;
+   height:40px;
+   border:1px solid gray;
+    visibility:visible;
+   }
+   #search-button{
+   width:50px;
+   height:40px;
+   font-size:20px;
+    visibility:visible;
+   }
+   #navv{
+   font-size:30px;
+   width:400px;
+   color:gray;
+   }
+   i{
+     font-size:30px;
+   }
+   #navv .Loginbtn{
+     width:200px;
+     height:50px;
+     border:1px solid orange;
+     color:black;
+     font-size:20px;
+     font-weight:bold;
+   }
+   .input-group{
+    visibility:hidden;
+   }
+   @media only screen and (max-width: 1200px) {
+ nav{
+ width:100%;
+ hieght:300px;
+ }
+  #navvv{
+    width:100%;
+    heignt:200px;
+    justift-content:space-between;
+  }
+  #heading{
+     font-size:70px;
+     margin-left:10px;
+  }
+   .search{
+   width:300px;
+  
+   }
+   #search-input{
+   border-raidus:50%;
+   width:250px;
+   height:40px;
+   border:1px solid gray;
+     visibility:hidden;
+   }
+   #search-button{
+   width:50px;
+   height:40px;
+   font-size:20px;
+     visibility:hidden;
+   }
+   #navv .Loginbtn{
+     width:200px;
+     height:50px;
+     border:1px solid orange;
+     color:black;
+     font-size:20px;
+     font-weight:bold;
+     float:right;
+     margin-left:30px;
+   }
+   .Loginbtn{
+   float:right;
+   margin-left:30px;
+   width:300px;
+   height:80px;
+   font-size:40px;
+  
+   }
+   .input-group{
+   width:100%;
+   height:80px;
+   visibility:visible;
+   }
+  .input-group input{
+  width:70%;
+   font-size:30px;
+  font-weight:bold;
+  border:2px solid blue;
+  }
+   .input-group button{
+  width:20%;
+  font-size:30px;
+  font-weight:bold;
+  }
+  nav .Login{
+   font-size:30px;
+   font-weight:bold;
+  }
+}
+   </style>
+  
+    
+      <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light justify-content-around text-black" id="navvv">
+        <div><a class="navbar-brand"><p  class="h3" id="heading"><span style="color:orange">INDIA</span><img src="image/Products/Chk.jpg"><span style="color:green">shop</span></p></a></div>
+        <div class="search">
+          <div class="input-group">
+      <div class="form-outline">
+        <input id="search-input" type="search" id="form1"  />
+       
+      </div>
+  <button id="search-button" type="button" class="btn btn-primary">
+    <i class="bi bi-search"></i>
+  </button>
+   </div>
+        
+        </div>
+        <div class="right-sizd d-flex justify-content-left" id="navv">
+          
+       <button class="Loginbtn" id="Login" onclick="window.open('IndiashopLog.jsp','_parent')">Login</button>
+        </div>
+       
+        </nav>
+        <div class="input-group">
+  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" id="serach" />
+  <button type="button" class="bg-primary text-light">search</button>
+</div>
+      
+        
+       
+   
+  
+    
+   <script src="js/Totallen.js"></script>
+  <script src="js/Cart.js"></script>
+  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      
